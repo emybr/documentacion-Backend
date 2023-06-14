@@ -1,0 +1,39 @@
+#CartPoduct
+components:
+  schemas:
+    CartProduct:
+      type: object
+      properties:
+        id:
+          type: string
+          description: ID del producto
+        title:
+          type: string
+          description: Título del producto
+        description:
+          type: string
+          description: Descripción del producto
+        price:
+          type: string
+          description: Precio del producto
+        thumbnail:
+          type: string
+          description: URL de la imagen del producto
+        code:
+          type: [string, null]
+          description: Código del producto (puede ser nulo)
+        stock:
+          type: [string, null]
+          description: Stock del producto (puede ser nulo)
+        quantity:
+          type: integer
+          description: Cantidad del producto
+      example:
+        id: "2"
+        title: "Camisa db"
+        description: "Descripción camisa bd"
+        price: "100"
+        thumbnail: "https://via.placeholder.com/150"
+        code: "234567"
+        stock: 50
+        quantity: 50

@@ -1,0 +1,36 @@
+#user
+components:
+  schemas:
+    User:
+      type: object
+      required:
+        - nombre
+        - apellido
+        - email
+        - password
+      properties:
+        name:
+          type: string
+          description: the name user
+        last name:
+          type: string
+          description: the last name user
+        age:
+          type: number
+          description: the last age user
+        email:
+          type: string
+          description: the last email user
+        password:
+          type: string
+          description: the last password user
+        cartId:
+          type: string
+          description: user cart id
+      example:
+          name: Emiliano
+          last name: Brizuela
+          age: 40
+          email: emy82ar@hotmail.com
+          password: 12345
+          cartId: []

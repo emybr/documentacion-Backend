@@ -1,0 +1,18 @@
+paths:
+  /products/delete/{pid}:
+    delete:
+      summary: Elimina un producto por su ID
+      tags:
+        - Productos
+      parameters:
+        - name: pid
+          in: path
+          description: ID del producto a eliminar
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Producto eliminado exitosamente
+        '404':
+          description: Producto no encontrado

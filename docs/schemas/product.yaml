@@ -1,0 +1,37 @@
+#Product
+components:
+  schemas:
+    Product:
+      type: object
+      required:
+        - id
+        - title
+        - thumbnail
+        - code
+        - stock
+      properties:
+        id: 
+          type: string
+          description: Id del producto.
+        title:
+          type: string
+          description: Titulo del producto.
+        price:
+          type: number
+          description: Precio del producto.
+        thumbnail:
+          type: string
+          description: Imagen del producto.
+        code: 
+          type: string
+          description: Código de producto
+        stock: 
+          type: number
+          description: Stock de producto
+      example:
+          id: 4ugd4738nfju485965ks
+          title: desktop computer
+          price: 1245.45
+          thumbnail: http://photo.url.png
+          code: 234459865876546586786784567n
+          stock: 50

@@ -1,0 +1,26 @@
+#Carts
+components:
+  schemas:
+    Carts:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: El ID del administrador.
+        email:
+          type: string
+          description: El correo electrónico del administrador.
+        timestamp:
+          type: string
+          format: date-time
+          description: La marca de tiempo del administrador.
+        products:
+          type: array
+          items:
+            type: string
+          description: Los productos asociados al administrador.
+      example:
+        _id: 643d4e57df5bfa89df86704f
+        email: admin@example.com
+        timestamp: 2023-04-17T13:49:11.317+00:00
+        products: []

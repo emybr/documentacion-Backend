@@ -1,0 +1,22 @@
+paths:
+  /carts/{cid}:
+    get:
+      summary: Obtiene un carrito por su ID
+      tags:
+        - Carritos
+      parameters:
+        - name: cid
+          in: path
+          description: ID del carrito
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Carrito obtenido exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Carts'
+        '404':
+          description: El carrito no existe

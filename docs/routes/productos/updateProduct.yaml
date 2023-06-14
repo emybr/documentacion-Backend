@@ -1,0 +1,24 @@
+paths:
+  /products/update/{pid}:
+    put:
+      summary: Actualiza un producto por su ID
+      tags:
+        - Productos
+      parameters:
+        - name: pid
+          in: path
+          description: ID del producto a actualizar
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Product'
+      responses:
+        '200':
+          description: Producto actualizado exitosamente
+        '404':
+          description: Producto no encontrado

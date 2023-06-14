@@ -1,0 +1,15 @@
+paths:
+  /productos/db:
+    get:
+      summary: Obtiene todos los productos disponibles
+      tags:
+        - Productos
+      responses:
+        '200':
+          description: Todos los productos disponibles
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
